@@ -140,7 +140,7 @@ You can specify multiple `src` resources seperated by a comma. For example, `COP
 We’ll copy the `package.json` and the `package-lock.json` file into our working directory `/app`.
 
 ```dockerfile
-COPY ["package.json", "package-lock.json*", "./"]
+COPY ["package.json", "package-lock.json", "./"]
 ```
 
 Note that, rather than copying the entire working directory, we are only copying the package.json file. This allows us to take advantage of cached Docker layers.
